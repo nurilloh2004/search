@@ -3,5 +3,7 @@ from .views import *
 
 
 urlpatterns = [
-    path('', HomePage.as_view(), name='searched')
+    path('search/', search_products, name='searched'),
+    path('', products, name='all'),
+
 ]
