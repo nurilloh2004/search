@@ -6,8 +6,7 @@ from django.views.generic import TemplateView
 from .models import *
 # Create your views here.
 
-class HomePage(TemplateView):
-    template_name = 'index.html'
+
 
 def products(request):
     all = Products.objects.all()
